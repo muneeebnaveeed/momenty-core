@@ -1,0 +1,32 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [3000, 5432],
+  "postCreateCommand": "sh ./.devcontainer/post-create.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "terminal.integrated.confirmOnExit": "never",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "diffEditor.ignoreTrimWhitespace": false
+      },
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "golang.go",
+        "heybourn.headwind",
+        "ms-vscode.makefile-tools",
+        "dsznajder.es7-react-js-snippets",
+        "equinusocio.vsc-material-theme",
+        "equinusocio.vsc-material-theme-icons",
+        "nrwl.angular-console",
+        "ms-playwright.playwright",
+        "firsttris.vscode-jest-runner"
+      ]
+    }
+  }
+}
